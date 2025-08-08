@@ -1,0 +1,38 @@
+*{
+     margin: 0;
+     padding: 0;
+     color: white;
+     font-family: Roboto,sans-serif;
+}
+.flex{
+     display: flex;
+}
+.just_center{
+     justify-content: center;
+}
+.just_space{
+     justify-content: space-between;
+}
+.align_center{
+      align-items: center;
+}
+.flex_col{
+     flex-direction: column;
+}
+.grid{
+     display: grid;
+}
+.border{
+     border: 2px solid red;
+}
+.gray{
+    background-color: #121212;
+}
+.radius_7{
+     border-radius: 7px;
+}
+
+body{
+     background-color: black;
+}
+

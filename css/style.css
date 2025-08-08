@@ -1,0 +1,487 @@
+* {
+  user-select: none;
+}
+
+.lrcontainer{
+     gap:7px;
+     padding: 10px;
+     padding-bottom: 0;;
+}
+.left{
+     width: 25vw;
+     height: 96vh;
+     gap: 10px;
+     /* position: fixed; */
+     
+}
+
+.right{
+     width: 75vw;
+          height: 96vh;
+ 
+}
+.left_1st img{
+     filter: invert(1);
+     background-color:#ededed;
+}
+.amni img:nth-child(2){
+      padding: 15px;
+      width: 32px;
+      display: none;
+}
+.logo img{
+     width: 14px;
+}
+.logo input{
+        background-color: #121212;
+        border: none;
+        font-size: 17px;
+        padding-left: 10px;
+         outline: none;
+}
+.logo input::placeholder{
+        color: white;
+        font-weight: bold;
+}
+.left_2nd{
+        height: 86vh;       
+     position: relative;
+}
+.logo{
+     padding:3px 15px;
+     font-size: 17px;
+     font-weight: bolder;
+}
+#log_spot{
+     padding: 15px 15px;
+     width: 110px;
+     padding-bottom: 5px;
+}
+.logo span{
+     padding: 12px;
+}
+ul{
+    list-style: none;
+}
+
+.library img{
+     width: 30px;
+     filter: invert(1);
+}
+.library{
+     padding: 25px;
+     font-size: 20px;
+     font-weight: bolder;
+     /* position: relative; */
+}
+.left_foot{
+      flex-wrap: wrap;
+      position: absolute;
+      bottom: 0;
+      font-size: 11px;
+}
+.header{
+      background-color: #222222;
+      height: 70px;
+      border-radius: 7px;
+      align-items: center;
+      
+}
+.left footer{ 
+      flex-wrap: nowrap; 
+      gap: 10px;
+      padding: 15px;
+}
+.header img:first-child{
+      padding-left: 50px;
+}
+.header img{
+      padding-left: 13px;
+}
+.header img:first-child{
+      filter: invert(1);
+      display: none;
+      
+}
+.button :first-child{
+      background-color: #222222;
+      border: none;
+      padding: 20px;
+      font-size: 17px;
+      font-weight: bold;
+      color: rgb(161, 158, 158);
+      transition: all 0.2s ease;
+}
+.button :first-child:hover{
+        color: white;
+}
+.button :nth-child(2){
+      background-color: white;
+      color: black;
+      padding:10px 18px;
+      border-radius: 20px;
+      border: none;
+      font-size: 15px;
+      font-weight: bold;
+      transition: all 0.2s ease;
+}
+.button :nth-child(2):hover{
+       transform: scale(1.2);
+       font-weight: bolder;
+       font-size: 16px;
+}
+.button{
+      padding-right: 50px;
+}
+.text{
+      padding: 25px;
+      padding-bottom:0;
+      font-size: 30px;
+      font-weight: bolder;
+      transition: all 0.6s ease;
+}
+.card{
+      background-color: rgb(39, 39, 39);
+        /* background-size: max(1200px, 100vw); */
+       width: 130px;
+       height: 230px;
+       /* width: max(130px,20%); */
+      border-radius: 10px;
+      padding: 7px;
+      position: relative;
+      transition: all 0.3s ease;
+}
+.card:hover{
+        transform: scale(1.1);
+        background-color: rgb(56, 56, 56);
+        cursor: pointer;
+}
+.img img{
+      width: 130px;
+      height: 150px;
+         border-radius: 10px;
+         object-fit: cover;
+}
+
+.card_container{
+      gap: 10px;
+      flex-wrap: wrap;
+      padding: 30px;
+      padding-bottom: 0;
+      height: 60vh;
+      overflow: hidden;
+      overflow-y: auto;
+      overflow-x: none;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+}
+.folcon{
+        background-color: rgb(38, 165, 38);
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        position: absolute;
+        right: 15px;
+        bottom:80px;
+        opacity: 0;
+        transition: all 0.25s ease;
+        
+}
+.card:hover .folcon{
+        opacity: 1;
+        bottom: 95px;
+}
+.folcon img{
+        width: 20px;
+        height: 20px;
+}
+main{
+       position: absolute;
+       width: 70%;
+       overflow: hidden;
+}
+main .title{
+     font-size: 20px;
+     font-weight: bold; 
+}
+main .dis{
+      font-size: 15px;
+      font-weight: bold;
+      text-align: center;
+}
+.rahad_ol li img,.ol li img{
+       filter: invert(1);
+}
+.rahad_ol .song_text{
+       width: 150px;
+}
+
+.containerdiv{
+         display: flex;
+       gap: 15px;
+       padding: 10px;
+       word-break: break-all;
+       cursor: pointer;
+       justify-content: left;
+       align-items: center;
+}
+.songlist{
+       overflow: auto;
+       overflow-x: hidden;
+       
+}
+.ol li:hover{
+        background-color: #2e2d2d;
+}
+
+
+.songlist {
+    height: 46vh;
+    overflow-y: auto;
+    background-color: #121212;
+    color: white;
+    padding: 10px;
+}
+
+/* Scrollbar styles for WebKit browsers (Chrome, Edge, Safari) */
+ .rahad::-webkit-scrollbar,
+.songlist::-webkit-scrollbar,
+.card_container::-webkit-scrollbar {
+    width: 10px;
+}
+.rahad::-webkit-scrollbar-track,
+.songlist::-webkit-scrollbar-track,
+.card_container::-webkit-scrollbar-track {
+    background: #121212;
+}
+.rahad::-webkit-scrollbar-thumb,
+.songlist::-webkit-scrollbar-thumb,
+.card_container::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+.rahad::-webkit-scrollbar-thumb:hover,
+.songlist::-webkit-scrollbar-thumb:hover,
+.card_container::-webkit-scrollbar-thumb:hover {
+    background-color: white;
+}
+
+.seekbar_container{
+       height: auto;
+       width: 68vw;
+       background-color: rgb(61, 58, 58);
+       margin: auto;
+       border-radius: 40px;
+       align-content: center;
+       display: flex;
+       position: fixed;
+       right: 1vw;
+       justify-content: center;
+       z-index: 1;
+       bottom: 30px;
+       padding: 20px;
+}
+.seekbar{
+       height: 5px;
+       width: 55vw;
+       background-color: rgb(255, 255, 255);
+        margin: 0 auto;
+        position: relative;
+        cursor: pointer;
+        margin-bottom: px;
+        border-radius: 15px;
+}
+.innerseekbar{
+        height: 5px;
+        /* width: 0vw; */
+        position: absolute;
+        background-color: red;
+        transition: all 0.3s;
+        border-radius: 15px;
+}
+.circle{
+      position: absolute;
+       height: 15px;
+       width: 15px;
+       background-color: red;
+       border-radius: 9px;
+       top: -4.5px;
+       transition: all 0.3s;
+}
+.control-icon img{
+       filter: invert(1);
+       width: 35px;
+       padding: 5px;
+}
+.control-icon{
+       padding: 20px;
+       padding-bottom: 5px;
+       justify-content: space-around;
+       width: 100%;
+}
+#prev:active , #next:active , #play:active {
+        filter: invert(0.5);
+
+}
+#play , #prev, #next{
+        cursor: pointer;
+}
+.time_vol{
+       gap: 10px;
+}
+.volume input{
+       cursor: pointer;
+}
+.time_vol{
+       justify-content: center;
+       align-items: center;
+}
+.songName{
+        width: 240px;
+       height: 25px;
+       overflow:hidden;
+       
+}
+.timer{
+       font-size: 21px;
+       padding-bottom: 8px;
+}
+.vol_icon img{
+       width: 27px;
+       padding-left: 16px;
+}
+.left{
+       transition: all 0.5s ease;
+}
+.ol li{
+        position: relative;
+            list-style-type: none;
+}
+.song_text{
+        width: 15vw;
+}
+.btnn{
+       position: absolute;
+       right: 0;
+       /* border: 1px solid rgb(150, 142, 142); */
+}
+.btnn img {
+      /* filter: invert(1); */
+       /* background-color: red; */
+       color: aqua;
+       
+}
+.rahad{
+       height: 54vh;
+       width: 250px;
+       background-color:  black;
+       position: absolute;
+       right: -100%;
+       /* left: -100px; */
+       z-index: 1;
+       transition: all 0.5s ease;
+       overflow-y: auto;
+       overflow-x: hidden;
+       border-radius: 7px;
+       font-size: 12px;
+}
+
+.rahad_ol .song_text{
+       color: rgb(102, 102, 255);
+       /* background-color: red; */
+        
+}
+.rahad_ol img{
+        width: 17px;
+}
+.hovar{
+       position: absolute;
+       right: 0;
+       top: 50px;
+       opacity: 0;
+       transition: all 0.4s ease;
+}
+
+
+@media screen and (max-width:1150px) {
+       .song_text{
+               width: 170px;
+       }
+       main{
+               width: 100%;
+       }
+      .left{
+             position: absolute;
+             z-index: 3;
+             left: -100%;
+             width: 300px;
+      }
+      .seekbar_container{
+             width: 90vw;
+      }
+      .right{
+             width: 100vw;
+      }
+      .lrcontainer{
+            padding: 0;
+      }
+      .header img:first-child{
+      display:inline;
+      padding-left: 15px;
+      
+       }  
+
+      .amni img:nth-child(2){
+      
+      display: inline;
+}
+}
+.sName{
+        display: inline-block;
+        white-space: nowrap;
+        transition: all 0.3s linear;
+        padding-left: 100%;
+}
+@media screen and (max-width:800px) {
+         .seekbar_container{
+             width: 90vw;
+             height: auto;
+      }
+      .seekbar{
+             width: 90vw;
+      }
+      .control-icon{
+            text-align: center;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+      }
+}
+@media screen and (max-width:400px) {
+        .card{
+                 width: 300px;
+                  height: 400px;
+      } 
+      .card img{
+             width: 280px;
+             height: 330px;
+             border-radius: 20px;
+      } 
+      .header{
+             justify-content: space-between;
+             /* background-color: ; */
+      }
+      .button{
+             padding-right: 12px;
+      }
+      .seekbar_container{
+             width: 88vw;
+             right: 1vw;
+      }
+
+}
+
+
+

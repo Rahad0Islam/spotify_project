@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="lrcontainer flex">
+      <div class="left radius_7 flex flex_col">
+        <div class="left_1st gray radius_7">
+          <div class="amni flex just_space">
+            <img id="log_spot" src="logo/logo.svg" alt="" />
+            <img src="logo/close.svg" alt="" />
+          </div>
+
+          <ul>
+            <li>
+              <div class="logo">
+                <img src="logo/home.svg" alt="" />
+                <span> Home </span>
+              </div>
+            </li>
+            <li>
+              <div class="logo">
+                <img src="logo/search.svg" alt="" />
+                <input type="text" placeholder="Search" id="search">
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="left_2nd gray radius_7">
+          <div class="library flex">
+            <img src="logo/playlist.svg" alt="" />
+            <span> Your Library </span>
+          </div>
+          <div class="songlist">
+            <ol class="ol"></ol>
+          </div>
+          <footer class="left_foot flex">
+            <div>
+              <a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a>
+            </div>
+            <div>
+              <a href="https://www.spotify.com/jp/privacy/"
+                ><span>Privacy Center</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/jp/legal/privacy-policy/"
+                ><span>Privacy Policy</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/jp/legal/cookies-policy/"
+                ><span>Cookies</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"
+                ><span>About Ads</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/jp/accessibility/"
+                ><span>Accessibility</span></a
+              >
+            </div>
+          </footer>
+        </div>
+      </div>
+      <div class="right gray radius_7">
+        <div class="header flex just_space">
+          <div class="icon">
+            <img id="hamburger" src="logo/hamburger.svg" alt="" />
+            <img src="logo/next_angle.svg" alt="" />
+            <img src="logo/prev_angle.svg" alt="" />
+          </div>
+          <div class="button">
+            <button>Sign up</button>
+            <button>Log in</button>
+          </div>
+        </div>
+
+        <main>
+          <div class="con flex just_space align_center">
+            <div class="text">Spotify Playlists</div>
+            <div class="fav_songlist">
+                  <div class="hovar">
+                      Favourite song
+                  </div>
+            </div>
+
+          </div>
+          <div class="rahad">
+            <h2 style="text-align: center; color: brown;">Favourite Song List</h2>
+             <ol class="rahad_ol">
+                  <!-- rahad -->
+             </ol>
+          </div>
+          <div class="card_container flex">
+          </div>
+          
+        </main>
+
+        <div class="seekbar_container flex flex_col align_center">
+          <div class="control-icon flex">
+            <div class="songName">
+              <div class="sName"></div>
+            </div>
+            <div class="playicon">
+              <img id="prev" src="logo/prevsong.svg" alt="" />
+              <img id="play" src="logo/play.svg" alt="" />
+              <img id="next" src="logo/nextsong.svg" alt="" />
+            </div>
+            <div class="time_vol flex">
+              <div class="timer">00:00 / 00:00</div>
+              <div class="vol_icon">
+                <img src="logo/volume.svg" alt="" />
+              </div>
+              <div class="volume">
+                <input type="range" />
+              </div>
+            </div>
+          </div>
+          <div class="seekbar">
+              <div class="innerseekbar"></div>
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+
